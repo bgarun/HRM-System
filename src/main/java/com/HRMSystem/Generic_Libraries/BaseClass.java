@@ -35,8 +35,9 @@ public class BaseClass {
 	@BeforeClass
 	public void OpenBrowser() throws Throwable {
 		String BROWSER=flib.commonDataFromProperty("browser");
-		String URL=flib.commonDataFromProperty("url");
+		//String URL=flib.commonDataFromProperty("url");
 		//WebDriverManager.chromedriver().setup();
+		
 		if(BROWSER.equalsIgnoreCase("chrome")) {
 			
 			driver=new ChromeDriver();
@@ -51,7 +52,8 @@ public class BaseClass {
 		}
 		
 		Wlib.maximizeWindow(driver);
-		driver.get(URL);
+		//driver.get(URL);
+		driver.get("https://www.worldometers.info/world-population/");
 		Wlib.waitForPageLoad(driver);
 		sdriver=driver;
 	}

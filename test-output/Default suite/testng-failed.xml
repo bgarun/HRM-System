@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Add_Corporate.INT_01">
+      <class name="practicePackage.WorldPopulationCount">
         <methods>
-          <include name="Script01"/>
+          <include name="population"/>
           <include name="closeBrowser"/>
           <include name="OpenBrowser"/>
           <include name="closeDB"/>
           <include name="connectDB"/>
         </methods>
-      </class> <!-- Add_Corporate.INT_01 -->
+      </class> <!-- practicePackage.WorldPopulationCount -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

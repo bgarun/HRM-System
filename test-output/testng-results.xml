@@ -1,129 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="2" total="10" passed="8" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Script01==Testscript execution Started==]]>
-    </line>
-    <line>
-      <![CDATA[test==Testscript execution Started==]]>
-    </line>
-    <line>
-      <![CDATA[test==Script Executed successfully==]]>
-    </line>
   </reporter-output>
-  <suite started-at="2022-11-17T12:10:42 IST" name="Default suite" finished-at="2022-11-17T12:11:42 IST" duration-ms="59797">
+  <suite started-at="2022-11-23T13:10:53 IST" name="Suite" finished-at="2022-11-23T13:10:53 IST" duration-ms="364">
     <groups>
-      <group name="integration">
-        <method signature="INT_01.Script01()[pri:0, instance:Add_Corporate.INT_01@6973b51b]" name="Script01" class="Add_Corporate.INT_01"/>
-        <method signature="INT_01.test()[pri:0, instance:Add_Corporate.INT_01@6973b51b]" name="test" class="Add_Corporate.INT_01"/>
-      </group> <!-- integration -->
+      <group name="regression">
+        <method signature="Script01.test02()[pri:0, instance:practicePackage.Script01@1725dc0f]" name="test02" class="practicePackage.Script01"/>
+        <method signature="Script02.test05()[pri:0, instance:practicePackage.Script02@76508ed1]" name="test05" class="practicePackage.Script02"/>
+        <method signature="Script04.test08()[pri:0, instance:practicePackage.Script04@7e0b85f9]" name="test08" class="practicePackage.Script04"/>
+        <method signature="Script04.test09()[pri:0, instance:practicePackage.Script04@7e0b85f9]" name="test09" class="practicePackage.Script04"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="Script01.test01()[pri:0, instance:practicePackage.Script01@1725dc0f]" name="test01" class="practicePackage.Script01"/>
+        <method signature="Script02.test04()[pri:0, instance:practicePackage.Script02@76508ed1]" name="test04" class="practicePackage.Script02"/>
+        <method signature="Script03.test07()[pri:0, instance:practicePackage.Script03@4facf68f]" name="test07" class="practicePackage.Script03"/>
+        <method signature="Script04.test08()[pri:0, instance:practicePackage.Script04@7e0b85f9]" name="test08" class="practicePackage.Script04"/>
+        <method signature="Script04.test10()[pri:0, instance:practicePackage.Script04@7e0b85f9]" name="test10" class="practicePackage.Script04"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2022-11-17T12:10:42 IST" name="Default test" finished-at="2022-11-17T12:11:42 IST" duration-ms="59797">
-      <class name="Add_Corporate.INT_01">
-        <test-method is-config="true" signature="connectDB()[pri:0, instance:Add_Corporate.INT_01@6973b51b]" started-at="2022-11-17T12:10:41 IST" name="connectDB" finished-at="2022-11-17T12:10:42 IST" duration-ms="1602" status="PASS">
+    <test started-at="2022-11-23T13:10:53 IST" name="Group" finished-at="2022-11-23T13:10:53 IST" duration-ms="364">
+      <class name="practicePackage.Script04">
+        <test-method signature="test08()[pri:0, instance:practicePackage.Script04@7e0b85f9]" started-at="2022-11-23T13:10:53 IST" name="test08" finished-at="2022-11-23T13:10:53 IST" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- connectDB -->
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:Add_Corporate.INT_01@6973b51b]" started-at="2022-11-17T12:10:45 IST" name="OpenBrowser" finished-at="2022-11-17T12:10:58 IST" duration-ms="13169" status="PASS">
+        </test-method> <!-- test08 -->
+        <test-method signature="test09()[pri:0, instance:practicePackage.Script04@7e0b85f9]" started-at="2022-11-23T13:10:53 IST" name="test09" finished-at="2022-11-23T13:10:53 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method signature="Script01()[pri:0, instance:Add_Corporate.INT_01@6973b51b]" started-at="2022-11-17T12:10:58 IST" name="Script01" finished-at="2022-11-17T12:11:39 IST" duration-ms="41295" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <i data-toggle="modal" data-target="#modal-delete3115" class="fa fa-trash" style="color: red" title="Delete Employee"></i> is not clickable at point (1259, 389). Other element would receive the click: <div class="modal fade show" id="modal-delete3115" aria-modal="true" style="padding-right: 17px; display: block;">...</div>
-  (Session info: chrome=107.0.5304.107)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-84AAFFGG', ip: '192.168.187.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.21 (71f4e2c9a6f3..., userDataDir: C:\Users\BGARUN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55987}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 366b9cd0d4a84a02314cf0007035793d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i data-toggle="modal" data-target="#modal-delete3115" class="fa fa-trash" style="color: red" title="Delete Employee"></i> is not clickable at point (1259, 389). Other element would receive the click: <div class="modal fade show" id="modal-delete3115" aria-modal="true" style="padding-right: 17px; display: block;">...</div>
-  (Session info: chrome=107.0.5304.107)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-84AAFFGG', ip: '192.168.187.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.21 (71f4e2c9a6f3..., userDataDir: C:\Users\BGARUN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55987}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 366b9cd0d4a84a02314cf0007035793d
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-at com.HRMSystem.PomPages.EmployeeListPage.deletebtn(EmployeeListPage.java:70)
-at Add_Corporate.INT_01.Script01(INT_01.java:28)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Script01==Testscript execution Started==]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Script01 -->
-        <test-method signature="test()[pri:0, instance:Add_Corporate.INT_01@6973b51b]" started-at="2022-11-17T12:11:40 IST" name="test" finished-at="2022-11-17T12:11:40 IST" duration-ms="56" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[test==Testscript execution Started==]]>
-            </line>
-            <line>
-              <![CDATA[test==Script Executed successfully==]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Add_Corporate.INT_01@6973b51b]" started-at="2022-11-17T12:11:40 IST" name="closeBrowser" finished-at="2022-11-17T12:11:42 IST" duration-ms="2000" status="PASS">
+        </test-method> <!-- test09 -->
+        <test-method signature="test10()[pri:0, instance:practicePackage.Script04@7e0b85f9]" started-at="2022-11-23T13:10:53 IST" name="test10" finished-at="2022-11-23T13:10:53 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="closeDB()[pri:0, instance:Add_Corporate.INT_01@6973b51b]" started-at="2022-11-17T12:11:45 IST" name="closeDB" finished-at="2022-11-17T12:11:45 IST" duration-ms="21" status="PASS">
+        </test-method> <!-- test10 -->
+      </class> <!-- practicePackage.Script04 -->
+      <class name="practicePackage.Script03">
+        <test-method signature="test07()[pri:0, instance:practicePackage.Script03@4facf68f]" started-at="2022-11-23T13:10:53 IST" name="test07" finished-at="2022-11-23T13:10:53 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeDB -->
-      </class> <!-- Add_Corporate.INT_01 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- test07 -->
+      </class> <!-- practicePackage.Script03 -->
+      <class name="practicePackage.Script02">
+        <test-method signature="test04()[pri:0, instance:practicePackage.Script02@76508ed1]" started-at="2022-11-23T13:10:53 IST" name="test04" finished-at="2022-11-23T13:10:53 IST" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test04 -->
+        <test-method signature="test05()[pri:0, instance:practicePackage.Script02@76508ed1]" started-at="2022-11-23T13:10:53 IST" name="test05" finished-at="2022-11-23T13:10:53 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test05 -->
+      </class> <!-- practicePackage.Script02 -->
+      <class name="practicePackage.Script01">
+        <test-method signature="test01()[pri:0, instance:practicePackage.Script01@1725dc0f]" started-at="2022-11-23T13:10:53 IST" name="test01" finished-at="2022-11-23T13:10:53 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test01 -->
+        <test-method signature="test02()[pri:0, instance:practicePackage.Script01@1725dc0f]" started-at="2022-11-23T13:10:53 IST" name="test02" finished-at="2022-11-23T13:10:53 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test02 -->
+      </class> <!-- practicePackage.Script01 -->
+    </test> <!-- Group -->
+  </suite> <!-- Suite -->
 </testng-results>
